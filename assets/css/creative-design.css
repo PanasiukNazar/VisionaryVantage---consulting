@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* Creative Design Landing page V 1.0
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
 :root {
   --blue: #79A9F5;
@@ -11488,4 +11475,79 @@ section.height-auto {
 
 .testmonial-wrapper .title {
   margin-top: -40px;
+}
+/* Cookie banner */
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.cookie-wrapper {
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  z-index: 999;
+}
+.cookie-wrapper .show {
+  right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+header i {
+  color: #55acee;
+  font-size: 32px;
+}
+header h2 {
+  color: #55acee;
+  font-weight: 500;
+}
+.data {
+    text-align: center;
+}
+.data p a {
+  color: #55acee;
+  text-decoration: none;
+  text-align: center !important;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.buttons {
+    padding: 20px 0px;
+    text-align: center;
+}
+.buttons .cookie-button {
+  border: 2px solid #55acee;
+  color: #212529;
+  background-color: #FAD02C;
+  border-color: #FAD02C;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 10px;
+  background: #55acee;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+  max-width: 150px;
+}
+.buttons #acceptBtn {
+    background-color: #FAD02C;
+}
+.buttons #acceptBtn:hover {
+    opacity: 0.8;
+}
+#declineBtn {
+    background-color: #212529;
+    border-color: #212529;
+}
+#declineBtn:hover {
+    opacity: 0.8;
 }
